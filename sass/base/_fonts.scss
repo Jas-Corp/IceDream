@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Welcome Summer";
+  src: url("../resources/images/fonts/Welcome\ Summer.ttf");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+*,
+::after,
+::before {
+  font-family: Welcome Summer, sans-serif;
+  color: #1e1e1e;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}

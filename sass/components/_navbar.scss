@@ -1,0 +1,45 @@
+header {
+  @extend %flex-space;
+
+  @include phone {
+    flex-direction: column;
+  }
+  .logo {
+    margin: 30px;
+    max-width: 160px;
+    max-height: 120px;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .navbar {
+    @extend %flex-space;
+    flex-wrap: wrap;
+    margin: 20px;
+
+    @include phone {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__element {
+      font-size: 23px;
+      margin: 30px;
+      @include phone {
+        font-size: 19px;
+        margin: 15px;
+      }
+      & a {
+        text-decoration: none;
+        &:hover {
+          color: $third-color;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

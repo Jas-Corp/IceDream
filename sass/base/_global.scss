@@ -1,0 +1,12 @@
+body {
+  background-color: $main-color;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+main {
+  background-color: white;
+  position: relative;
+  overflow: visible;
+  margin-top: 95px;
+}

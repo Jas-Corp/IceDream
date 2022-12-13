@@ -16,41 +16,42 @@
             <img src="./resources/images/logo.png" alt="">
         </div>
         <ul class="navbar">
-            <li class="navbar__element"><a href="#">Qui somme nous ?</a></li>
-            <li class="navbar__element"><a href="#">Boutique</a></li>
+            <li class="navbar__element"><a href="#story">Qui somme nous ?</a></li>
+            <li class="navbar__element"><a href="#game">Boutique</a></li>
             <li class="navbar__element"><a href="#">Contact</a></li>
         </ul>
     </header>
 
 
     <main>
-        <div class="test">
-            <div class="cloud"></div>
-            <div class="cloud"></div>
-            <div class="cloud"></div>
+        <div class="clouds">
+            <div class="clouds__cloud"></div>
+            <div class="clouds__cloud"></div>
+            <div class="clouds__cloud"></div>
         </div>
-        <section class="main">
-            <div class="main--filter">
-                <h2>VENEZ DECOUVRIR NOTRE <span>NOUVELLE GAME</span> DE GLACE</h2>
-                <button>COMMANDER</button>
+        <section class="showcase">
+            <div class="showcase--filter">
+                <h2 class="showcase__title">VENEZ DECOUVRIR NOTRE <span>NOUVELLE GAME</span> DE GLACE</h2>
+                <button class="showcase__button">COMMANDER</button>
             </div>
         </section>
-        <section class="game">
-            <h3>LA GAME DREAM</h3>
-            <div class="game--container">
-                <article>
+
+        <section class="game" id="game">
+            <h3 class="game__title">LA GAME DREAM</h3>
+            <div class="game__cards">
+                <article class="game__card">
                     <h4>LA STRAWBERRY</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, rerum.</p>
                     <img src="./resources/images/anna-bratiychuk-UOiHPTEXT3Q-unsplash.jpg" alt="">
                 </article>
-                <article>
+                <article class="game__card">
                     <h4>LA CHOCOLATE</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, rerum.</p>
 
                     <img src="./resources/images/spork-n-fork-aWBweuWlju4-unsplash.jpg" alt="">
 
                 </article>
-                <article>
+                <article class="game__card">
                     <h4>LA DREAM</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, rerum.</p>
                     <img src="./resources/images/ice.jpg" alt="">
@@ -59,10 +60,10 @@
         </section>
     </main>
 
-    <section class="histoire">
-        <h3>GLACIER DEPUIS 3 GENERATIONS</h3>
-        <div class="cont">
-            <div class="left">
+    <section class="story" id="story">
+        <h3 class="story__title">GLACIER DEPUIS 3 GENERATIONS</h3>
+        <div class="story__containers">
+            <div class="story__containers--left">
                 <img src="./resources/images/meeting-gd9989420e_1920.jpg" alt="">
                 <div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti assumenda doloribus incidunt
@@ -73,10 +74,13 @@
                 </div>
                 <img src="./resources/images/ice-cream-g07d4da4bd_1920.jpg" alt="">
             </div>
-            <div class=" midle">
-
+            <div class="story__containers--middle">
+                <div class="story__containers__circle"></div>
+                <div class="story__containers__circle"></div>
+                <div class="story__containers__circle"></div>
+                <div class="story__containers__circle"></div>
             </div>
-            <div class="right">
+            <div class="story__containers--right">
                 <div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti assumenda doloribus incidunt
                         est eum magni nihil molestiae nesciunt itaque atque. Praesentium eveniet rem repudiandae in.

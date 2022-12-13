@@ -1,0 +1,25 @@
+footer {
+  background-color: $third-color;
+  padding: 50px;
+
+  & ul {
+    @extend %flex-space;
+    & li {
+      color: white;
+
+      &:hover {
+        cursor: pointer;
+        color: $second-color;
+      }
+    }
+    margin-bottom: 50px;
+  }
+
+  & p {
+    color: white;
+    text-align: center;
+    font-weight: 0;
+    font-size: 13px;
+    margin-top: 10px;
+  }
+}

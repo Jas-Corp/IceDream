@@ -1,0 +1,95 @@
+.game {
+  overflow: visible;
+  margin-top: 70px;
+  min-height: 800px;
+  &__title {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  &__cards {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: visible;
+  }
+  &__card {
+    height: 513px;
+    width: 348px;
+    margin: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: #1e1e1e7c 0px 0px 20px;
+    border-radius: 10px;
+    transition: all 0.2s;
+
+    & p {
+      margin-top: 15px;
+      color: white;
+      text-align: center;
+    }
+
+    & h4 {
+      margin-top: 50px;
+      color: white;
+      font-size: 23px;
+    }
+    & img {
+      position: absolute;
+      width: 150%;
+      height: 70%;
+      bottom: -10%;
+      object-fit: cover;
+    }
+
+    &:hover {
+      height: 523px;
+      width: 358px;
+      cursor: pointer;
+    }
+
+    &:nth-child(1) {
+      background-color: $third-color;
+      transform: rotate(15deg);
+      & img {
+        rotate: -20deg;
+      }
+      & h4,
+      & p {
+        rotate: -10deg;
+      }
+    }
+
+    &:nth-child(2) {
+      background-color: $second-color;
+      transform: rotate(-5deg);
+      & h4,
+      & p,
+      & img {
+        rotate: 5deg;
+      }
+    }
+
+    &:nth-child(3) {
+      background-color: $fourth-color;
+      transform: rotate(7deg);
+      & h4,
+      & p {
+        rotate: -7deg;
+      }
+    }
+
+    @include little {
+      transform: rotate(0deg) !important;
+      width: 100vw;
+      height: 300px;
+      margin: 25px 10px;
+      & > * {
+        rotate: 0deg !important;
+        margin: 10px !important;
+      }
+    }
+  }
+}
