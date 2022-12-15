@@ -4,6 +4,7 @@ footer {
 
   & ul {
     @extend %flex-space;
+    margin-bottom: 50px;
     & li {
       color: white;
 
@@ -12,7 +13,14 @@ footer {
         color: $second-color;
       }
     }
-    margin-bottom: 50px;
+
+    @include little {
+      flex-direction: column;
+      align-items: center;
+      & li {
+        margin: 10px;
+      }
+    }
   }
 
   & p {

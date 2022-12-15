@@ -385,6 +385,15 @@ footer ul li:hover {
   cursor: pointer;
   color: #1e1e1e;
 }
+@media (max-width: 600px) {
+  footer ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer ul li {
+    margin: 10px;
+  }
+}
 footer p {
   color: white;
   text-align: center;
