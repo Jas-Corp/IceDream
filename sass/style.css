@@ -181,12 +181,12 @@ header .navbar__element a:hover {
   overflow: visible;
 }
 .game__card {
-  height: 513px;
-  width: 348px;
-  margin: 100px;
   display: flex;
   align-items: center;
   flex-direction: column;
+  height: 513px;
+  width: 348px;
+  margin: 100px;
   box-shadow: rgba(30, 30, 30, 0.4862745098) 0px 0px 20px;
   border-radius: 10px;
   transition: all 0.2s;

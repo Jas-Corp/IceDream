@@ -15,12 +15,12 @@
     overflow: visible;
   }
   &__card {
-    height: 513px;
-    width: 348px;
-    margin: 100px;
     display: flex;
     align-items: center;
     flex-direction: column;
+    height: 513px;
+    width: 348px;
+    margin: 100px;
     box-shadow: #1e1e1e7c 0px 0px 20px;
     border-radius: 10px;
     transition: all 0.2s;
